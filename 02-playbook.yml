@@ -1,6 +1,6 @@
--name:  Helloworld
+- name:  Helloworld
   hosts: web
   tasks:
-    -name: Ping the server
+    - name: Ping the server
       ansible.builtin.debug:
         msg: "Hello World"
