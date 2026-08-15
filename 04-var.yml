@@ -7,7 +7,7 @@
     Trainer: "siva"
   tasks:
     - name: Print the variables
-      var: 
+      vars: 
         Course: Ansible
         Duration: 5 hours
         Trainer: siva kumar
