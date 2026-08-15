@@ -1,0 +1,11 @@
+- name: playlevel variable
+  hosts: local
+  connection: local
+  
+    
+  tasks:
+    - name: Print the variables
+      vars: 
+        Course: Ansible
+      ansible.builtin.debug:
+        msg: "Course: {{ Course }}"
