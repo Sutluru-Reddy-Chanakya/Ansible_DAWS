@@ -1,0 +1,8 @@
+- name: ansible command vs shell command
+  hosts: local
+  connection: local
+  tasks:
+    - name: command module test 
+      ansible.builtin.command:
+        cmd: "ls -l"
+      register: command_output
