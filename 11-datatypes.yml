@@ -1,0 +1,21 @@
+- name: demo on data types
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "DevSecops with AWS"
+    DURATION: 140
+    TRAINER: "siva kumar"
+    ISFREE: true
+    DETAILS:
+      MONTHS: 4
+      TRAINER: "siva kumar"
+    TOPICS:
+      - Ansible
+      - AWS
+      - DevOps
+      - Security
+
+  tasks:
+    - name: Print the variables
+      ansible.builtin.debug:
+        msg: "Course: {{ PROGRAM }}, Duration: {{ DURATION }}, Trainer: {{ TRAINER }}, IsFree: {{ ISFREE }}, Details: {{ DETAILS }}, Topics: {{ TOPICS }}"
