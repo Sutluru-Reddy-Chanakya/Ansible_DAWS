@@ -5,7 +5,17 @@
     - name: check user exit or not 
       ansible.builtin.command: id roboshop
       register: user_check
+      ignore_errors: true
 
-    - name: print user check output
+    - name: print the  output
       ansible.builtin.debug:
         msg: "{{user_check}}"
+
+
+
+
+
+
+#        
+
+
