@@ -13,7 +13,7 @@
 
 
     - name: create user
-      ansible.builtin.command: user add roboshop
+      ansible.builtin.command: useradd roboshop
       when: user_check.rc != 0
       
 
