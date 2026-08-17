@@ -4,8 +4,5 @@
   tasks:
     - name: filter test
       ansible.builtin.debug:
-        msg: "{{ item | upper }}"
-      loop:
-        - one
-        - two
-        - three
+        msg: "Hi Chanakya , {{ greeting | default('Good Morning') }} "
+      
