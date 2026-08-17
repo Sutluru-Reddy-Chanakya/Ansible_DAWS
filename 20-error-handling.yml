@@ -12,8 +12,10 @@
         msg: "{{user_check}}"
 
 
-
-
+    - name: create user
+      ansible.builtin.command: user add roboshop
+      when: user_check.rc != 0
+      
 
 
 #        
