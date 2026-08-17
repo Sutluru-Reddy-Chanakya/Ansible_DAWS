@@ -1,0 +1,11 @@
+- name: demon on filters
+  hosts: local
+  connection: local
+  tasks:
+    - name: filter test
+      ansible.builtin.debug:
+        msg: "{{ item | upper }}"
+      loop:
+        - one
+        - two
+        - three
