@@ -5,7 +5,7 @@
     - name: install packages using loop
       ansible.builtin.package:
         name: "{{ item }}"
-        state: {{ item.state }}
+        state: "{{ item.state }}"
       loop:
         - {name: git, state: present}
         - {name: vim, state: absent}
